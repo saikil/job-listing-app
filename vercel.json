@@ -2,15 +2,5 @@
     "version": 2,
     "public": true,
     "name": "job-listing",
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/api"
-      }
-    ],
-    "functions": {
-      "api/index.js": {
-        "includeFiles": "dist/job-listing/**"
-      }
-    }
+    "devCommand":"npm start"
   }
