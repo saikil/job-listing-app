@@ -1,15 +1,16 @@
 {
     "version": 2,
-    "builds": [
+    "public": true,
+    "name": "job-listing",
+    "rewrites": [
       {
-        "src": "index.js",
-        "use": "@now/node"
+        "source": "/(.*)",
+        "destination": "/api"
       }
     ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "index.js"
+    "functions": {
+      "api/index.js": {
+        "includeFiles": "dist/job-listing/**"
       }
-    ]
+    }
   }
