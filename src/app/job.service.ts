@@ -8,7 +8,7 @@ import { Job } from './models/job.model';
 })
 export class JobService {
 
-  private apiUrl = 'http://localhost:4200';
+  private apiUrl = 'https://job-listing-app-sooty.vercel.app/';
   private favoriteJobs: Job[] = [];
 
   constructor(private http: HttpClient) { }
